@@ -7,8 +7,14 @@
         <link rel="stylesheet" href="styles/bootstrap.css">
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
-        <script src="resemble.js"></script>
-        <script src="index.js"></script>
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/resemble.js"></script>
+        <script src="js/job.js"></script>
+        <script src="js/files.js"></script>
+        <script src="js/debuggersession.js"></script>
+        <script src="js/taskManager.js"></script>
+
+        <script src="js/index.js"></script>
         <style>
           input[type="file"]::-webkit-file-upload-button {
             background-color: red;
@@ -64,7 +70,11 @@
       <div class="hero-unit">
          <p>
            port:<input type="text" id="port" value="8080"/>
-           <button id="restart" class="btn btn-primary btn-large" >Restart</button>
+           <button id="startJob" class="btn btn-primary btn-large" >StartJob</button>
+           <button id="choose_dir" class="btn btn-primary btn-large" >chose dir</button>
+           <button id="debug" class="btn btn-primary btn-large" >Debug.</button>
+           <button id="capture" class="btn btn-primary btn-large" >screen.</button>
+           <img id="img" />
          </p>
       </div>
       <pre id="logger"></pre>
